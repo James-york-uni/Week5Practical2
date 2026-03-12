@@ -38,7 +38,12 @@ In general, UI objects that are intended to be selectable should be made from el
 Replace the divs with class "tile" and "menu-item" with more appropriate HTML elements. Buttons will work best but you may want to try using a link or two to see the effect.
 
 ## Exercise 2.2: Using the right JavaScript events
-After completing the previous exercise, try playing the game with your keyboard again. You will find the tiles are now keyboard focusable but not selectable--presing enter or space while a tile is in focus should have the same effect as clicking it. A tiny, one-word change in theJavaScript can address this issue. See if you can find it and fix it.
+After completing the previous exercise, try playing the game with your keyboard again. You will find the tiles are now keyboard focusable but not selectable--presing enter or space while a tile is in focus should have the same effect as clicking it with a mouse. A tiny, one-word change in the JavaScript can address this issue. See if you can find it and fix it.
+
+The following event documentation may provide clues:
+- [mouseup](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event)
+- [pointerup](https://developer.mozilla.org/en-US/docs/Web/API/Element/pointerup_event)
+- [click](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event)
 
 ## Exercise 2.3: Focus order should be logical
 Notice that when tabbing through the two menu buttons, the focus moves from right to left instead of left to right, the order that users would read the buttons in English. This issue may seem trivial in this instance but illogical or out-of-order keyboard navigation is a common accessibility issue, particularly when there are lots of navigable items.
